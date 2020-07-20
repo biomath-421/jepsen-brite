@@ -5,7 +5,7 @@ require_once 'Configuration.php';
 abstract class Modele {
 
     private static $bdd;
-    private $options =
+    private $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
     protected function executerRequete($sql, $params = null) {
         if ($params == null) {
@@ -22,8 +22,7 @@ abstract class Modele {
             $dsn = Configuration::get("dsn");
             $login = Configuration::get("login");
             $mdp = Configuration::get("mdp");
-            self::$bdd = new PDO($dsn, $login, $mdp,
-                array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            self::$bdd = new PDO($dsn, $login, $mdp, $this->options;
         }
         return self::$bdd;
     }
