@@ -22,7 +22,7 @@ Config: contient les différentes params de config
 
 Contenu: css, js, images, bootstrap.....
 
-Modele: les différentes classes: users, catégories, Event, Comment.
+Modele: les différentes classes: users, catégories, Event, Comment, Admin.
 
 Controlleur : les différents controleurs: Accueil, inscription, ....
 
