@@ -1,1 +1,1 @@
-dossier contennant le script sq
+dossier contenant le script sql
