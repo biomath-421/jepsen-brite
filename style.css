@@ -1,22 +1,22 @@
 .logoimg{
-    margin-left: 30px;
+    margin-right: 30px;
 }
 .range{
     display: flex;
     justify-items: right;
 }
 .imgevent{
-    width:100px; 
+    width:150px; 
     height: auto;
     float: right;
-    margin-top: auto;
-    margin-bottom: auto;
     margin-right: 20px;
+    margin-top: 60px;
 }
 .titre-h2{
  color: rgb(49, 49, 49);
  font-family: "Mulish-bold",Arial, Helvetica, sans-serif;
  font-size: 20px; 
+ max-width: 450px;
 }
 .author{
     color: rgb(128, 128, 128);
@@ -37,30 +37,115 @@
     font-family: "Mulish",Arial, Helvetica, sans-serif;
     color: rgb(46, 46, 46);
     max-width: 400px;
-    line-height: 15px;
+    line-height: 18px;
     font-size: 15px;
+    text-align: justify;
 }
 .date{
     font-family: "Mulish",Arial, Helvetica, sans-serif; 
     color: rgb(71, 71, 71)
 
 }
-
-.icon{
-    padding: 5px;
+.category{
+    display: inline-block;
+    max-width: 100px;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 87, 87);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.buttonadd{
+    background-color: rgb(46, 46, 46);
+    color: rgb(204, 204, 204);
+    padding: 10px;
+    margin: 5px;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.buttonadd:hover{
+    background-color: rgb(204, 204, 204);
+    color: rgb(46, 46, 46);
+    
+}
+.h2center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttonsignup:hover{
+    background-color: rgb(204, 204, 204);
+    color: rgb(46, 46, 46);
+    
+}
+.buttonsignin:hover{
+    background-color: rgb(204, 204, 204);
+    color: rgb(46, 46, 46);
+    
+}
+.buttonsearch:hover{
+    background-color: rgb(204, 204, 204);
+    color: rgb(46, 46, 46);
+    
+}
+.add{
+    font-size: 25px;
+}
+.buttonsignin{
+    background-color: rgb(46, 46, 46);
+    color: rgb(204, 204, 204);
+    padding: 10px;
+    margin: 5px;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0px;
+}
+.buttonsignup{
+    background-color: rgb(46, 46, 46);
+    color: rgb(204, 204, 204);
+    padding: 10px;
+    margin: 5px;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0px;
+    margin-right:30px
+}
+.buttonsearch{
+    background-color: rgb(46, 46, 46);
+    color: rgb(204, 204, 204);
+    padding: 10px;
+    margin: 5px;
+    margin-right: 5px;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0px;
 }
 header{
-    height: 40px;
+    height: 50px;
     width: 100%;
     background-color: rgb(112, 112, 112);
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 25px;
+    margin-right: 25px;
+    position: fixed;
+    z-index: 1;
+    top:0
     
 }
 main{
-    margin-top: 25px;
+    margin-top: 75px;
+    margin-bottom: 30px;
     line-height: 10px;
     display: flex;
     flex-direction: column;
@@ -71,6 +156,49 @@ body{
     margin-top:0;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgb(235, 235, 235);
+}
+.title_input{
+    font-family: "Mulish",Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.descr_input{
+    font-family: "Mulish",Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    max-width: 600px;
+    height:auto;
+    min-height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.check_cat{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+form{
+    font-family: "Mulich", Arial, Helvetica, sans-serif;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+    width: 150px;
+    font-family: "Mulich", Arial, Helvetica, sans-serif;
+    color: rgb(71, 71, 71);
+}
+th{
+    font-family: "Mulich", Arial, Helvetica, sans-serif;
+    color: rgb(71, 71, 71);
+
 }
 @font-face{
     font-family: "Mulish-bold";
