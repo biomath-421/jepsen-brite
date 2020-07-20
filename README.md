@@ -16,8 +16,6 @@ Réunion matinale et réunion pm => si besoin on peut faire du pear coding
 
 index.php
 
-bd: contient le script sql
-
 Config: contient les différentes params de config
 
 Contenu: css, js, images, bootstrap.....
