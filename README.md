@@ -16,10 +16,16 @@ Réunion matinale et réunion pm => si besoin on peut faire du pear coding
 
 index.php
 
+bd: contient le script sql
+
+Config: contient les différentes params de config
+
 Contenu: css, js, images, bootstrap.....
 
 Modele: les différentes classes: users, catégories, Event, Comment.
 
 Controlleur : les différents controleurs: Accueil, inscription, ....
+
+Framework: qui va gerer le site
 
 Vue: contient le tempalte et les différentes vue à afficher
