@@ -22,4 +22,4 @@ Contenu: css, js, images, bootstrap.....
 
 Modele: contient les différentes requetes.
 
-Vue: contient le tempalte et les différentes vue à afficher
+Vue: contient le template et les différentes vue à afficher
