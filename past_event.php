@@ -14,14 +14,13 @@
 <main>
 <table  class="categoryzone">
 <tr>
-    <td><div><input type="checkbox" id="concert" name="concert"><label for="concert">concert</label></div></td>
+    <td>concert</td>
 </tr>
 <tr>
-    <td><div><input type="checkbox" id="culture" name="culture"><label for="culture">culture</label></div></td>
+    <td>culture</td>
 </tr>
-<tr>    <td><div><input type="checkbox" id="manifestation" name="manifestation"><label for="manifestation">manifestation</label></div></td>
-</tr>
-<tr><td><div><input type="checkbox" id="musee" name="musee"><label for="musee">musée</label></div></td></tr>
+<tr><td>manifestation</td></tr>
+<tr><td>musée</td></tr>
 </table>
 </main>
 <main class="bodyzone2">
