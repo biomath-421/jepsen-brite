@@ -8,7 +8,7 @@
 <img src="" alt="logo jepsen-brite" class="logoimg" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/index.php?'>
 
 <button class="buttonsearch">search event</button>
-<button class="buttonsignin">sign in</button>
+<button class="buttonsignin"  onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/past_event.php?'>sign in</button>
 <button class="buttonsignup">sign up</button>
 </header>
 <main>

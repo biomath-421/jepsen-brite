@@ -12,14 +12,14 @@ Said => Controller
 
 Réunion matinale et réunion pm => si besoin on peut faire du pear coding
 
-### organisations des répertoires: => voir mon repo MyBlog
+### organisations des répertoires:
 
 index.php
 
+Config: contient les différentes params de config
+
 Contenu: css, js, images, bootstrap.....
 
-Modele: les différentes classes: users, catégories, Event, Comment.
+Modele: contient les différentes requetes
 
-Controlleur : les différents controleurs: Accueil, inscription, ....
-
-Vue: contient le tempalte et les différentes vue à afficher
+Vue: contient le template et les différentes vue à afficher (include)

@@ -1,0 +1,12 @@
+
+créé une database jepsenbrite
+
+-> !!! utiliser utf8_general_ci; pour les caractères
+
+
+créé 3 tables:
+
+-> User: voir les infos données par Nico
+-> Categorie: voir les infos de Nico
+-> Event: voir les info + un champ User et un champ Categorie qui serviront de clé etrangère
+
