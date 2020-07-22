@@ -12,7 +12,7 @@
 <button class="buttonsignup">sign up</button>
 </header>
 <main>
-    
+    <
 </main>
 <script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous"></script>
 </body>
