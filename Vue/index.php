@@ -5,17 +5,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<img src="" alt="logo jepsen-brite" class="logoimg" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/index.php?'>
-
-<button class="buttonsearch"><i class="fas fa-search"></i></button>
-<button class="buttonsignin"  onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/signin_page.php?'>
-sign in
-</button>
-<button class="buttonsignup"onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/signup_page.php?'>
-sign up
-</button>
-</header>
+<?php include("header.inc.php");?>
 <main class="grid">
     <table  class="categoryzone">
     <tr><th>Catégories</th></tr>
@@ -58,7 +48,6 @@ sign up
 <div class="range">
 <button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/past_event.php?'> past events</button>
 <button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/create_event.php?'>+ add event</button>
-<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/create_event.php?'>+ add category</button>
 </div>
 <section class="article">
 
@@ -99,11 +88,7 @@ sign up
 </section >
 </div>
 </main>
-<?php
-?>
+<?php include("footer.inc.php");?>
 <script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
->>>>>>> refs/remotes/origin/master

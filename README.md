@@ -16,6 +16,14 @@ Réunion matinale et réunion pm => si besoin on peut faire du pear coding
 
 index.php
 
+signup_page.php
+
+signin_page.php
+
+past_event.php
+
+create_event.php
+
 Config: contient les différentes params de config
 
 Contenu: css, js, images, bootstrap.....
