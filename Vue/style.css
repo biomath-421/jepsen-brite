@@ -1,9 +1,21 @@
+.descr_input{
+    font-family: "Mulish",Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    max-width: 600px;
+    height:auto;
+    min-height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.check_cat{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 .logoimg{
     margin-right: 30px;
-}
-i{
- display: block; 
- padding:5px;
 }
 
 .imgevent{
@@ -14,10 +26,10 @@ i{
     margin-top: 60px;
 }
 .titre-h2{
- color: rgb(49, 49, 49);
- font-family: "Mulish-bold",Arial, Helvetica, sans-serif;
- font-size: 20px; 
- max-width: 450px;
+    color: rgb(49, 49, 49);
+    font-family: "Mulish-bold",Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    max-width: 450px;
 }
 .author{
     color: rgb(128, 128, 128);
@@ -45,7 +57,7 @@ i{
 .date{
     font-family: "Mulish",Arial, Helvetica, sans-serif; 
     color: rgb(71, 71, 71)
-
+    
 }
 .category{
     display: inline-block;
@@ -61,7 +73,7 @@ i{
 .buttonadd{
     background-color: rgb(46, 46, 46);
     color: rgb(204, 204, 204);
-    padding: 10px;
+    padding: auto;
     margin: 5px;
     font-family: "Mulish-bold", Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -84,6 +96,14 @@ i{
     color: rgb(46, 46, 46);
     
 }
+.buttonsection{
+    color: rgb(107, 107, 107);
+    border: 0px solid;
+}
+.buttonsection:hover{
+    color: rgb(71, 71, 71);
+    border: 0px solid;
+}
 .h2center{
     margin-left: auto;
     margin-right: auto;
@@ -92,6 +112,15 @@ i{
     background-color: rgb(204, 204, 204);
     color: rgb(46, 46, 46);
     
+}
+.title_input{
+    font-family: "Mulish",Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .buttonsignin:hover{
     background-color: rgb(204, 204, 204);
@@ -130,13 +159,32 @@ i{
 .buttonsearch{
     background-color: rgb(46, 46, 46);
     color: rgb(204, 204, 204);
-    padding: 10px;
+    padding: auto;
     margin: 5px;
     margin-right: 5px;
     font-family: "Mulish-bold", Arial, Helvetica, sans-serif;
     font-size: 15px;
     border-radius: 5px;
     border: 0px;
+}
+.categoryzone{
+    grid-column: 0;
+    margin-left: auto;
+    margin-right: 0px;
+    width: 200px;
+    
+
+}
+.inputcheck{
+    padding: 5px;
+    border-bottom: rgb(49, 49, 49);
+    background-color: rgb(204,204,204);
+    color: rgb(49, 49, 49);
+    border-radius: 2px;
+
+}
+button{
+    height:35px;
 }
 header{
     height: 50px;
@@ -156,16 +204,19 @@ main{
     margin-bottom: 30px;
     line-height: 10px;
     display: grid;
-    grid-template-columns: 200px 1fr 1fr;
     flex-direction: column;
     justify-items: middle;
     
 }
-.categoryzone{
-    grid-column: 1;
+.grid{
+    grid-template-columns: 300px 1fr;
+
 }
-.bodyzone2{
-    grid-column: 2;
+.feedback{
+    display:flex;
+    flex-direction: column;
+    justify-items: middle;
+    grid: 2;
 }
 body{
     margin-top:0;
@@ -173,33 +224,11 @@ body{
     margin-right: auto;
     background-color: rgb(235, 235, 235);
 }
-.title_input{
-    font-family: "Mulish",Arial, Helvetica, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 400px;
-    max-width: 600px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.descr_input{
-    font-family: "Mulish",Arial, Helvetica, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 400px;
-    max-width: 600px;
-    height:auto;
-    min-height: 200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.check_cat{
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 form{
     font-family: "Mulich", Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
 }
 table{
     margin-left: auto;
@@ -213,7 +242,11 @@ td{
 th{
     font-family: "Mulich", Arial, Helvetica, sans-serif;
     color: rgb(71, 71, 71);
-
+    
+}
+i{
+ display: block; 
+ padding:5px;
 }
 @font-face{
     font-family: "Mulish-bold";

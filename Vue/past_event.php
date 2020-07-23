@@ -1,15 +1,14 @@
 <html>
 <head>
-<title>accueil</title>
+<title>past events</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-<img src="" alt="logo jepsen-brite" class="logoimg" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/index.php?'>
-
-<button class="buttonsearch">search event</button>
-<button class="buttonsignin"  onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/signin_page.php?'>sign in</button>
-<button class="buttonsignup">sign up</button>
+<img src="" alt="logo jepsen-brite" class="logoimg" onclick=window.location.href='http://localhost/jepsen_brite/vue/jepsen-brite/index.php?'>
+<button class="buttonsearch"><i class="fas fa-search"></i></button>
+<button class="buttonsignin"  onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/signin_page.php?'>sign in</button>
+<button class="buttonsignup" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/signup_page.php?'>sign up</button>
 </header>
 <main>
 <table  class="categoryzone">
@@ -26,9 +25,9 @@
 <main class="bodyzone2">
 <?php date_default_timezone_set('Europe/Paris')?>
 <div class="range">
-<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/past_event.php?'> past events</button>
-<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/create_event.php?'> <strong class="add">+</strong> add event</button>
-<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/create_event.php?'> <strong class="add">+</strong> add category</button>
+<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/past_event.php?'> past events</button>
+<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/create_event.php?'> <strong class="add">+</strong> add event</button>
+<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/create_event.php?'> <strong class="add">+</strong> add category</button>
 </div>
 <section class="article">
 
