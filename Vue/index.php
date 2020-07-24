@@ -7,43 +7,7 @@
     <body>
         <?php include("header.inc.php");?>
     <div id="slider"></div>
-<main class="grid">
-    <table  class="categoryzone">
-    <tr><th>Catégories</th></tr>
-    <tr>
-        <td class="inputcheck">
-            <div>
-                <input type="checkbox" id="all" name="all">
-                <label for="concert">
-                    All
-                </label>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="inputcheck">
-            <div>
-                <input type="checkbox" id="concert" name="concert">
-                <label for="concert">
-                    concert
-                </label>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="inputcheck">
-            <div>
-                <input type="checkbox" id="culture" name="culture">
-                <label for="culture">
-                    culture
-                </label>
-            </div>
-        </td>
-    </tr>
-    <tr>    <td class="inputcheck"><div><input type="checkbox" id="manifestation" name="manifestation"><label for="manifestation">manifestation</label></div></td>
-    </tr>
-    <tr><td class="inputcheck"><div><input type="checkbox" id="musee" name="musee"><label for="musee">musée</label></div></td></tr>
-    </table>
+<main>
 <div class="feedback">
 <?php date_default_timezone_set('Europe/Paris')?>
 <div class="range">
