@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    include '../Config/config.inc.php';
+    include '../../Config/config.inc.php';
 
 	try {
 		$bdd = new PDO($dbdsn, $dbusername, $dbpassword, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -20,8 +20,8 @@
 				$_SESSION['id'] = $userinfo['id'];
 				$_SESSION['pseudo'] = $userinfo['pseudo'];
                 $_SESSION['email'] = $userinfo['email'];
-                $_SESSION['avatar'] = $userinfo['avatar'];
-				header("Location: ../vue/acceuil.php?id=".$_SESSION['id']);
+               	 $_SESSION['avatar'] = $userinfo['avatar'];
+				header("Location: ../../Vue/acceuil.inc.php?id=".$_SESSION['id']);
 			}else{
 				$error = "Incorrect USERNAME or PASSWORD";
 			}

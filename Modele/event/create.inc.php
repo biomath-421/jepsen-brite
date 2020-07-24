@@ -1,5 +1,5 @@
 <?php
-    include '../Config/config.inc.php';
+    include '../../Config/config.inc.php';
     
 	try {
 		$bdd = new PDO($dbdsn, $dbusername, $dbpassword, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -12,7 +12,7 @@
             $email = htmlspecialchars($_POST['email']);
             $password = sha1($_POST['password']);
             $confirm_password = sha1($_POST['confirm_password']);
-            $avatar = $_POST['avatar'];
+            $defaultAvatar = "default.jpeg";
 
             $pseudolength = strlen($pseudo);
             if($pseudolength <= 20){
@@ -31,7 +31,7 @@
                                     'pseudo' => $pseudo,
                                     'password' => $password,
                                     'email' => $email,
-                                    'avatar' => $avatar
+                                    'avatar' => $defaultAvatar
                                 ));
                                 $done = "Your account is done!";
 
