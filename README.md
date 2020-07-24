@@ -4,7 +4,7 @@
 
 Mathieu => front end de toute les pages.
 
-Bryan => back end des pages inscription, connection, deconnection, profil de l'utilisateur, supprimer compte, modifier compte.
+Bryan => back end des pages inscription, mail de confirmation d'inscription, connection, deconnection, profil de l'utilisateur, supprimer compte, modifier compte.
 
 Said => back end des pages evenement, ancien evenement, afficher un evenement, créer un evenement, modifier un evenement, supprimer un evenement.
 
