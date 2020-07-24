@@ -1,10 +1,9 @@
 
 <html>
-<body>
 <head>
-<title>homepage</title>
 <link rel="stylesheet" href="style.css">
 </head>
+<body>
 <header>
 <img src="" alt="logo jepsen-brite" class="logoimg" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/index.php?'>
 
