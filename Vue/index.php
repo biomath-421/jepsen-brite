@@ -1,11 +1,12 @@
 <<<<<<< HEAD
 <html>
-<head>
-<title>homepage</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<?php include("header.inc.php");?>
+    <head>
+        <title>homepage</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <?php include("header.inc.php");?>
+    <div id="slider"></div>
 <main class="grid">
     <table  class="categoryzone">
     <tr><th>Catégories</th></tr>
