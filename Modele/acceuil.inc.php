@@ -9,7 +9,8 @@
 
     $acceuil = $bdd->query("SELECT * FROM evenement WHERE categorie = ? ORDER BY date, time LIMIT 5");
     $acceuil->execute(array($_POST['categorie']));
-    while($acceuilVue = $acceuil->fetch()){
-        echo '<p>' . $acceuilVue['titre'] . '</p>';
-    }
+    $acceuilVue = $acceuil->fetch();
+    // while($acceuilVue = $acceuil->fetch()){
+    //     echo '<p>' . $acceuilVue['titre'] . '</p>';
+    // }
 ?>

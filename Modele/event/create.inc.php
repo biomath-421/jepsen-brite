@@ -6,52 +6,37 @@
 	} catch (Exception $e) {
 		die('Erreur : ' . $e->getMessage());
     }
-    if(isset($_POST['formInscription'])){
-        if(!empty($_POST['username']) AND !empty($_POST['email']) AND !empty($_POST['password']) AND !empty($_POST['confirm_password']) AND !empty($_POST['avatar'])){
-            $pseudo = htmlspecialchars($_POST['username']);
-            $email = htmlspecialchars($_POST['email']);
-            $password = sha1($_POST['password']);
-            $confirm_password = sha1($_POST['confirm_password']);
-            $defaultAvatar = "default.jpeg";
 
-            $pseudolength = strlen($pseudo);
-            if($pseudolength <= 20){
-                $reqpseudo = $bdd->prepare("SELECT * FROM utilisateur WHERE pseudo = ?");
-                $reqpseudo->execute(array($pseudo));
-                $pseudoexist = $reqpseudo->rowCount();
-                if($pseudoexist == 0){
-                    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-                        $reqmail = $bdd->prepare("SELECT * FROM utilisateur WHERE email = ?");
-                        $reqmail->execute(array($email));
-                        $mailexist = $reqmail->rowCount();
-                        if($mailexist == 0){
-                            if($password == $confirm_password){
-                                $insertMember = $bdd->prepare("INSERT INTO utilisateur(pseudo, password, email, avatar) VALUE (:pseudo, :password, :email, :avatar)");
-                                $insertMember->execute(array(
-                                    'pseudo' => $pseudo,
-                                    'password' => $password,
-                                    'email' => $email,
-                                    'avatar' => $defaultAvatar
-                                ));
-                                $done = "Your account is done!";
+    $reqtitre = $bdd->prepare("SELECT * FROM evenement WHERE titre = ?");
+    $reqtitre->execute(array($titre));
+    
+    $reqauteur = $bdd->prepare("SELECT * FROM evenement WHERE auteur = ?");
+    $reqauteur->execute(array($auteur));
 
-                            }else{
-                                $error = "Your PASSWORD doesn't match!";
-                            }
-                        }else{
-                            $error = "This EMAIL alrady exists!";
-                        }
-                    }else{
-                        $error = "Your EMAIL isn't valide!";
-                    }
-                }else{
-                    $error = "This USERNAME alrady exists!";
-                }
-            }else{
-                $error = "Your PSEUDO is too long!";
-            }
-        }else{
-            $error = "Complet form please!";
-        }
-    }
+    $reqdate = $bdd->prepare("SELECT * FROM evenement WHERE date = ?");
+    $reqdate->execute(array($date));
+
+    $reqtime = $bdd->prepare("SELECT * FROM evenement WHERE time = ?");
+    $reqtime->execute(array($time));
+
+    $reqimage = $bdd->prepare("SELECT * FROM evenement WHERE image = ?");
+    $reqimage->execute(array($image));
+
+    $reqdescription = $bdd->prepare("SELECT * FROM evenement WHERE description = ?");
+    $reqdescription->execute(array($description));
+
+    $reqcategorie = $bdd->prepare("SELECT * FROM evenement WHERE categorie = ?");
+    $reqcategorie->execute(array($categorie));
+    
+    $insertMember = $bdd->prepare("INSERT INTO evenement(titre, auteur, date, time, image, description, categorie) VALUE (:titre, :auteur, :date, :time, :image, :description, :categorie)");
+    $insertMember->execute(array(
+        'titre' => $titre,
+        'auteur' => $auteur,
+        'date' => $date,
+        'time' => $time,
+        'image' => $image,
+        'description' => $description,
+        'categorie' => $categorie
+    ));
+
 ?>

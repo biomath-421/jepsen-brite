@@ -22,9 +22,9 @@
 <!-- Afficher image dans profil-->
 
 <?php
-    if(!empty($userinfo['avatar'])){
+    // if(!empty($userinfo['avatar'])){
 ?>
-        <img src="../../user/avatar/<?php echo $userinfo['avatar']; ?>" alt="avatar" width='150'>
+        <!-- <img src="../../user/avatar/<?php echo $userinfo['avatar']; ?>" alt="avatar" width='150'> -->
 <?php
-    }
+    // }
 ?>
