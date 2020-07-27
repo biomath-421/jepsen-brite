@@ -3,7 +3,7 @@
 ## Organisation du travail: 
 
 ### Mathieu  
-#### front end des pages :
+  #### Front end
 - [ ] principale,
 - [ ] inscription,
 - [ ] connection,
@@ -15,7 +15,7 @@
 - [ ] modification d'un évenement.
 
 ### Bryan
-#### Back end des pages :
+  #### Back end
 - [x] création d'un profil utilisateur, 
 - [ ] mail de confirmation d'inscription, 
 - [x] connection, 
@@ -26,7 +26,7 @@
 - [ ] modification d'un compte utilisateur.
 
 ## Said
-### back end des pages 
+  ### Back end 
 - [ ] évenement, 
 - [ ] ancien evenement, 
 - [ ] affichage d'un évenement, 
