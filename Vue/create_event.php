@@ -1,14 +1,26 @@
+<?php
+    session_start();
+?>
+
 <html>
 <head>
 <title>create event</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<?php include("header.inc.php");?>
+<?php 
+    if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
+        include("header.php");
+    }else{
+        include("header.inc.php");
+    }
+?>
+
 <main>
 <h2 class="Titre-h2 h2center">Nouvel événement</h2>
 <input type="text" class="title_input"placeholder="Titre"></input>
 <input type="text" class="descr_input"placeholder="insérez votre description ici"></input>
+<input type="file" class="title_input"></input>
 <table class="check_cat">
     <tr>
         <th>
@@ -29,7 +41,7 @@
 </table>
 <input type=submit class="title_input"></input>
 </main>
-
+<?php include("footer.inc.php");?>
 
 <script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous"></script>
 </body>
