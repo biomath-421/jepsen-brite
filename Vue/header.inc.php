@@ -9,10 +9,15 @@
 </head>
 <body>
     <header>
-        <a href="index.php" class="logoimg"><img src="jepsen_brite.png" alt="logo jepsen-brite" class="logoimg"></a>
-        <button class="buttonsearch"><i class="fas fa-search"></i></button>
-        <a href="signin_page.php" class='buttonsignin'>Sign in</a>
-        <a href="signup_page.php" class='buttonsignup'>Sign up</a>
+        <div class='avatar'>
+        
+        </div>
+        <div class='bouton'>
+            <a href="index.php" class="logoimg"><img src="jepsen_brite.png" alt="logo jepsen-brite" class="logoimg"></a>
+            <button class="buttonsearch"><i class="fas fa-search"></i></button>
+            <a href="signin_page.php" class='buttonsignin'>Sign in</a>
+            <a href="signup_page.php" class='buttonsignup'>Sign up</a>
+        </div>
     </header>
-</body>
+</body> 
 </html>
