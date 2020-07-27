@@ -5,14 +5,14 @@
 ### Mathieu  
   #### Front end
 - [ ] principale,
-- [ ] inscription,
-- [ ] connection,
-- [ ] profil de l'utilisateur,
-- [ ] modification du profil de l'utilisateur,
-- [ ] ancien évenement,
+- [x] inscription,
+- [x] connection,
+- [x] profil de l'utilisateur,
+- [x] modification du profil de l'utilisateur,
+- [x] ancien évenement,
 - [ ] affichage d'un évenement,
-- [ ] création d'un évenement,
-- [ ] modification d'un évenement.
+- [x] création d'un évenement,
+- [x] modification d'un évenement.
 
 ### Bryan
   #### Back end
