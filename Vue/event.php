@@ -1,10 +1,20 @@
+<?php
+    session_start();
+?>
+
 <html>
 <head>
-<title>events</title>
-<link rel="stylesheet" href="style.css">
+<title>past events</title>
+<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<?php include("header.inc.php");?>
+<?php 
+    if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
+        include("header.php");
+    }else{
+        include("header.inc.php");
+    }
+?>
 <main class="grid">
 <table  class="categoryzone">
     <tr><th>Catégories</th></tr>
@@ -45,9 +55,20 @@
     <div class="feedback">
 <?php date_default_timezone_set('Europe/Paris')?>
     <div class="range">
-    <button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/event.php?'>events</button>
-<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/past_event.php?'> past events</button>
-<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/create_event.php?'> + add event</button>
+    <?php 
+            if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
+        ?>
+                <a href="event.php?id=<?php echo $_SESSION['id']; ?>" class="buttonadd">events</a>
+                <a href="past_event.php?id=<?php echo $_SESSION['id']; ?>" class="buttonadd">past events</a>
+                <a href="create_event.php?id=<?php echo $_SESSION['id']; ?>" class="buttonadd">+ add even</a>
+        <?php
+            }else{
+        ?>
+                <a href="event.php" class="buttonadd">events</a>
+                <a href="past_event.php" class="buttonadd">past events</a>
+        <?php
+            }
+        ?>
 </div>
 <section class="article">
     
