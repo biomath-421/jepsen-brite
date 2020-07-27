@@ -16,9 +16,24 @@
 }
 .logoimg{
     margin-right: 30px;
+    height: 30px;
+    width:auto;
+}
+.logoimg:hover{
+    background-color: rgb(190, 190, 190);
+    padding:10px;
+    margin-right: 20px;
 }
 
 .imgevent{
+    width:200px; 
+    height: auto;
+    float: right;
+    margin:10px;
+    margin-right: 20px;
+    margin-top: 45px;
+}
+.imguser{
     width:200px; 
     height: auto;
     float: right;
@@ -55,6 +70,11 @@
     line-height: 18px;
     font-size: 15px;
     text-align: justify;
+}
+.email{
+    font-family: "Mulish",Arial, Helvetica, sans-serif; 
+    color: rgb(71, 71, 71);
+    font-size: 15px;;
 }
 .date{
     font-family: "Mulish",Arial, Helvetica, sans-serif; 
@@ -237,8 +257,9 @@ footer{
     color: rgb(71, 71, 71);
     display: flex;
     align-items: center;
-    align-self: flex-end;
+    align-self: baseline;
     justify-content: space-between;
+
     padding-left: 20px;
     padding-right: 20px;
 }

@@ -5,7 +5,7 @@
 </head>
 <body>
 <header>
-<img src="" alt="logo jepsen-brite" class="logoimg" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/index.php?'>
+<img src="jepsen_brite.png" alt="logo jepsen-brite" class="logoimg" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/index.php?'>
 
 <button class="buttonsearch"><i class="fas fa-search"></i></button>
 <button class="buttonsignin"  onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/signin_page.php?'>
