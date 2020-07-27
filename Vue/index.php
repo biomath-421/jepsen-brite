@@ -40,7 +40,7 @@
             }
             ?>
         </div>
-            <div id="slider"></div>
+        <?php include("slider.php")?>
         <section class="article">
 
         <i class="fab fa-readme buttonsection"></i>
