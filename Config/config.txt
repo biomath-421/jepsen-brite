@@ -1,1 +1,0 @@
-contient les parametres de config

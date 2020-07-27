@@ -5,7 +5,7 @@
     $dbusername = "root";
     $dbpassword = "";
 
-    $app_title = "Jepsen - brite";
+    $app_title = "brite";
 
     $css_file = "contenu/css/style.css";
     $separator = "|";
