@@ -21,9 +21,10 @@
 - [x] connection, 
 - [x] deconnection,
 - [x] header de connection (connecter à un compte ou pas),
-- [ ] profil de l'utilisateur, 
-- [ ] suppression d'un compte utilisateur, 
-- [ ] modification d'un compte utilisateur.
+- [x] profil de l'utilisateur, 
+- [-] suppression d'un compte utilisateur, 
+- [-] modification d'un compte utilisateur,
+- [-] ajouter un avatar.
 
 ### Said
   #### Back end 
