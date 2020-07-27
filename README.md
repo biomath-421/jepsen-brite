@@ -1,12 +1,38 @@
-# jepsen-brite
+# Jepsen-brite
 
-### organisation du travail: architecture MVC
+## Organisation du travail: 
 
-Mathieu => front end de toute les pages.
+### Mathieu  
+#### front end des pages :
+- [ ] principale,
+- [ ] inscription,
+- [ ] connection,
+- [ ] profil de l'utilisateur,
+- [ ] modification du profil de l'utilisateur,
+- [ ] ancien évenement,
+- [ ] affichage d'un évenement,
+- [ ] création d'un évenement,
+- [ ] modification d'un évenement.
 
-Bryan => back end des pages inscription, mail de confirmation d'inscription, connection, deconnection, profil de l'utilisateur, supprimer compte, modifier compte.
+### Bryan
+#### Back end des pages :
+- [x] création d'un profil utilisateur, 
+- [ ] mail de confirmation d'inscription, 
+- [x] connection, 
+- [x] deconnection,
+- [x] header de connection (connecter à un compte ou pas),
+- [ ] profil de l'utilisateur, 
+- [ ] suppression d'un compte utilisateur, 
+- [ ] modification d'un compte utilisateur.
 
-Said => back end des pages evenement, ancien evenement, afficher un evenement, créer un evenement, modifier un evenement, supprimer un evenement.
+## Said
+### back end des pages 
+- [ ] évenement, 
+- [ ] ancien evenement, 
+- [ ] affichage d'un évenement, 
+- [ ] création d'un evenement, 
+- [ ] modification d'un evenement, 
+- [ ] suppression d'un evenement.
 
 ### organisation du travail: scrum
 
@@ -24,10 +50,3 @@ past_event.php
 
 create_event.php
 
-Config: contient les différentes params de config
-
-Contenu: css, js, images, bootstrap.....
-
-Modele: contient les différentes requetes
-
-Vue: contient le template et les différentes vue à afficher (include)
