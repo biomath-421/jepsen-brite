@@ -1,19 +1,18 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header befor connection</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<header>
-<img src="" alt="logo jepsen-brite" class="logoimg" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/index.php?'>
-
-<button class="buttonsearch"><i class="fas fa-search"></i></button>
-<button class="buttonsignin"  onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/signin_page.php?'>
-sign in
-</button>
-<button class="buttonsignup"onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/signup_page.php?'>
-sign up
-</button>
-</header>
+    <header>
+        <a href="index.php" class="logoimg"><img src="jepsen_brite.png" alt="logo jepsen-brite" class="logoimg"></a>
+        <button class="buttonsearch"><i class="fas fa-search"></i></button>
+        <a href="signin_page.php" class='buttonsignin'>Sign in</a>
+        <a href="signup_page.php" class='buttonsignup'>Sign up</a>
+    </header>
 </body>
 </html>
