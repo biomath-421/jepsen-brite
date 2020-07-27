@@ -2,11 +2,11 @@
 
 ### organisation du travail: architecture MVC
 
-Mathieu => Vue
+Mathieu => front end de toute les pages.
 
-Bryan => Modele + déploiement Heroku
+Bryan => back end des pages inscription, mail de confirmation d'inscription, connection, deconnection, profil de l'utilisateur, supprimer compte, modifier compte.
 
-Said => Controller
+Said => back end des pages evenement, ancien evenement, afficher un evenement, créer un evenement, modifier un evenement, supprimer un evenement.
 
 ### organisation du travail: scrum
 

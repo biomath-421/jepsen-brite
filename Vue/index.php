@@ -6,21 +6,21 @@
     </head>
     <body>
         <?php include("header.inc.php");?>
-    <div id="slider"></div>
-<main>
-<div class="feedback">
-<?php date_default_timezone_set('Europe/Paris')?>
-<div class="range">
-<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/event.php?'>events</button>
-<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/past_event.php?'>past events</button>
-<button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/create_event.php?'>+ add event</button>
-</div>
+        <main>
+            <div class="feedback">
+                <?php date_default_timezone_set('Europe/Paris')?>
+                <div class="range">
+                    <button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/event.php?'>events</button>
+                    <button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/past_event.php?'>past events</button>
+                    <button class="buttonadd" onclick=window.location.href='http://localhost/jepsen_brite/jepsen-brite/vue/create_event.php?'>+ add event</button>
+                </div>
+<div id="slider"></div>
 <section class="article">
-
+<div class="range1">
 <i class="fab fa-readme buttonsection"></i>
 <i class="fas fa-pen buttonsection"></i>
 <i class="fas fa-trash buttonsection"></i>
-
+</div>
 <img src="téléchargement.jpg" alt="image event" class="imgevent">
 <h2 class="Titre-h2">Bassleader reactivated world <div class="category">concert</div></h2>
 <h5 class="date"><?php echo date('H:i, D d/m/Y')?></h5>
@@ -29,11 +29,11 @@
 <p class="author">auteur</p>
 </section >
 <section class="article">
-
+<div class="range1">
 <i class="fab fa-readme buttonsection"></i>
 <i class="fas fa-pen buttonsection"></i>
 <i class="fas fa-trash buttonsection"></i>
-
+</div>
 <img src="2016-Daydream-Festival.jpg" alt="image event" class="imgevent">
 <h2 class="Titre-h2">Daydream festival<div class="category">concert</div></h2>
 <h5 class="date"><?php echo date('H:i, D d/m/Y')?></h5>
@@ -41,11 +41,11 @@
 <p class="author">auteur</p>
 </section >
 <section class="article">
-    
+<div class="range1">
 <i class="fab fa-readme buttonsection"></i>
 <i class="fas fa-pen buttonsection"></i>
 <i class="fas fa-trash buttonsection"></i>
-
+</div>
 <img src="dominator.jpg" alt="image event" class="imgevent">
 <h2 class="Titre-h2">Dominator 2020<div class="category">concert</div></h2>
 <h5 class="date"><?php echo date('H:i, D d/m/Y')?></h5>
