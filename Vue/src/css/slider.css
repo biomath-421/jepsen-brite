@@ -63,7 +63,11 @@ background-position: center;
     68%{
         left:-200%;
     }
-    100%{
+    95%{
         left:-200%;
     }
+    100%{
+        left:0;
+    }
+
 }
