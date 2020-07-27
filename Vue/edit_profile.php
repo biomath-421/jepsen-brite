@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>edit profile</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="src/css/style.css">
     </head>
     <body>
         <?php include("header.inc.php");?>
