@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>past events</title>
+<title>events</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
