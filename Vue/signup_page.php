@@ -20,6 +20,7 @@
 				$_SESSION['id'] = $userinfo['id'];
 				$_SESSION['pseudo'] = $userinfo['pseudo'];
 				$_SESSION['email'] = $userinfo['email'];
+				$_SESSION['password'] = $userinfo['password'];
 				header("Location: index.php?id=".$_SESSION['id']);
 			}else{
 				$error = "Incorrect USERNAME or PASSWORD";
@@ -47,7 +48,15 @@
     	<input type="password" class="title_input" placeholder="Password" name='passwordLog'>
     	<input type=submit class="title_input" placeholder="confirm" name='formLog'>
     </form>
-
+	<?php
+        if(isset($error)){
+    ?>
+        <div class="error">
+            <p><i class="fas fa-times"></i> <?php echo $error ?> <i class="fas fa-times"></i></p>
+        </div>
+    <?php
+        }
+    ?>
     <script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous"></script>
 </body>
 </html>
