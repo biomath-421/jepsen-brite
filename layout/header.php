@@ -30,7 +30,7 @@
 <body>
     <header>
         <div class='avatar'>
-            <a href="./user.php?id=<?php echo $_SESSION['id']; ?>"><img src="./user/avatar/<?php echo $userinfo['avatar']; ?>" alt="avatar" width='45' style="border-radius:22.5px; margin-left: 10px; display: flex; align-self: center;"></a>
+            <a href="./user.php?id=<?php echo $_SESSION['id']; ?>"><img src="./user/avatar/<?php echo $userinfo['avatar']; ?>" alt="avatar" width='45' style="border-radius:22.5px; margin-left: 10px; display: flex; align-self: center; height: auto;"></a>
         </div>
         <div class='bouton'>
             <a href="./index.php?id=<?php echo $_SESSION['id']; ?>" class="logoimg"><img src="./src/img/jepsen_brite.png" alt="logo jepsen-brite"></a>
