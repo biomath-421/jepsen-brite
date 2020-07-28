@@ -85,7 +85,7 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <?php include("header.inc.php");?>
+    <?php include("layout/header.inc.php");?>
 
     <form action='' method='POST'>
     <h2 class="Titre-h2 h2center">inscription</h2>

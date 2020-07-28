@@ -10,9 +10,9 @@
 <body>
 <?php 
     if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
-        include("header.php");
+        include("layout/header.php");
     }else{
-        include("header.inc.php");
+        include("layout/header.inc.php");
     }
 ?>
 <main class="grid">
