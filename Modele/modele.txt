@@ -1,2 +1,0 @@
-partie métier
-contient les différentes classes que l'on aura besoin: users, admin, categories, events, commentaire.
