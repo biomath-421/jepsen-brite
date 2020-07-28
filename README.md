@@ -24,7 +24,9 @@
 - [x] profil de l'utilisateur, 
 - [x] suppression d'un compte utilisateur, 
 - [x] modification d'un compte utilisateur,
-- [ ] ajouter un avatar.
+- [x] ajouter un avatar,
+- [x] test de déploiement sur heroku,
+- [ ] déploiment du site sur heroku.
 
 ### Said
   #### Back end 
