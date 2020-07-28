@@ -30,7 +30,7 @@
                 ?>
                 <a href="event.php?id=<?php echo $_SESSION['id']; ?>" class="buttonadd">events</a>
                 <a href="past_event.php?id=<?php echo $_SESSION['id']; ?>" class="buttonadd">past events</a>
-                <a href="create_event.php?id=<?php echo $_SESSION['id']; ?>" class="buttonadd">+ add even</a>
+                <a href="create_event.php?id=<?php echo $_SESSION['id']; ?>" class="buttonadd">+ add event</a>
         <?php
             }else{
                 ?>
