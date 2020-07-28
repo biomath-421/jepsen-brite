@@ -5,14 +5,14 @@
 ### Mathieu  
   #### Front end
 - [ ] principale,
-- [ ] inscription,
-- [ ] connection,
-- [ ] profil de l'utilisateur,
-- [ ] modification du profil de l'utilisateur,
-- [ ] ancien évenement,
+- [x] inscription,
+- [x] connection,
+- [x] profil de l'utilisateur,
+- [x] modification du profil de l'utilisateur,
+- [x] ancien évenement,
 - [ ] affichage d'un évenement,
-- [ ] création d'un évenement,
-- [ ] modification d'un évenement.
+- [x] création d'un évenement,
+- [x] modification d'un évenement.
 
 ### Bryan
   #### Back end
@@ -21,9 +21,10 @@
 - [x] connection, 
 - [x] deconnection,
 - [x] header de connection (connecter à un compte ou pas),
-- [ ] profil de l'utilisateur, 
-- [ ] suppression d'un compte utilisateur, 
-- [ ] modification d'un compte utilisateur.
+- [x] profil de l'utilisateur, 
+- [x] suppression d'un compte utilisateur, 
+- [x] modification d'un compte utilisateur,
+- [ ] ajouter un avatar.
 
 ### Said
   #### Back end 

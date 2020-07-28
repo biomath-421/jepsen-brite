@@ -31,7 +31,7 @@
             <img src="user/avatar/<?php echo $userinfo['avatar']; ?>" alt="avatar" width='50'>
         </div>
         <div class='bouton'>
-            <a href="index.php"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffr.pngtree.com%2Ffreepng%2Fcool-man-shield--logo-vector_4129254.html&psig=AOvVaw0Hs6-I6qKZlxGWYueS4Wn2&ust=1595684875576000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIip7cSD5uoCFQAAAAAdAAAAABAD" alt="logo jepsen-brite"></a>
+            <a href="index.php"><img src="jepsen_brite.png" alt="logo jepsen-brite"></a>
             <button class="buttonsearch"><i class="fas fa-search"></i></button>
             <a href="logout.php" class='buttonsignup'>Log out</a>
         </div>
