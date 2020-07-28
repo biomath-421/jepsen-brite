@@ -9,10 +9,10 @@
 - [x] connection,
 - [x] profil de l'utilisateur,
 - [x] modification du profil de l'utilisateur,
-- [x] ancien évenement,
-- [ ] affichage d'un évenement,
-- [x] création d'un évenement,
-- [x] modification d'un évenement.
+- [x] ancien événement,
+- [ ] affichage d'un événement,
+- [x] création d'un événement,
+- [x] modification d'un événement.
 
 ### Bryan
   #### Back end
@@ -30,10 +30,11 @@
   #### Back end 
 - [ ] évenement, 
 - [ ] ancien evenement, 
-- [ ] affichage d'un évenement, 
-- [ ] création d'un evenement, 
-- [ ] modification d'un evenement, 
-- [ ] suppression d'un evenement.
+- [ ] affichage d'un événement, 
+- [ ] création d'un événement, 
+- [ ] modification d'un événement, 
+- [ ] suppression d'un événement,
+- [ ] comentaire des événements.
 
 ### organisation du travail: scrum
 
