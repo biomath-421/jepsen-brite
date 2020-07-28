@@ -2,7 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial scale=1.0">
         <title>slider</title>
-        <link rel="stylesheet" href="src/css/slider.css">
+        <link rel="stylesheet" href="../src/css/slider.css">
     </head>
     <body>
         
