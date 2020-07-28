@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<?php include("header.inc.php");?>
+<?php include("layout/header.inc.php");?>
 <main>
     <p class="about">Jepsen-Brite is a displaying event website, where each person has an equality in action. all people can create or browse event.</p>
 </main>

@@ -9,10 +9,10 @@
 - [x] connection,
 - [x] profil de l'utilisateur,
 - [x] modification du profil de l'utilisateur,
-- [x] ancien évenement,
-- [ ] affichage d'un évenement,
-- [x] création d'un évenement,
-- [x] modification d'un évenement.
+- [x] ancien événement,
+- [ ] affichage d'un événement,
+- [x] création d'un événement,
+- [x] modification d'un événement.
 
 ### Bryan
   #### Back end
@@ -24,16 +24,19 @@
 - [x] profil de l'utilisateur, 
 - [x] suppression d'un compte utilisateur, 
 - [x] modification d'un compte utilisateur,
-- [ ] ajouter un avatar.
+- [x] ajouter un avatar,
+- [x] test de déploiement sur heroku,
+- [ ] déploiment du site sur heroku.
 
 ### Said
   #### Back end 
 - [ ] évenement, 
 - [ ] ancien evenement, 
-- [ ] affichage d'un évenement, 
-- [ ] création d'un evenement, 
-- [ ] modification d'un evenement, 
-- [ ] suppression d'un evenement.
+- [ ] affichage d'un événement, 
+- [ ] création d'un événement, 
+- [ ] modification d'un événement, 
+- [ ] suppression d'un événement,
+- [ ] comentaire des événements.
 
 ### organisation du travail: scrum
 
