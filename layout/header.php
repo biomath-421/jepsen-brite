@@ -23,17 +23,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header after connection</title>
 
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
     <header>
         <div class='avatar'>
-            <img src="user/avatar/<?php echo $userinfo['avatar']; ?>" alt="avatar" width='50'>
+            <a href="./user.php?id=<?php echo $_SESSION['id']; ?>"><img src="./user/avatar/<?php echo $userinfo['avatar']; ?>" alt="avatar" width='50'></a>
         </div>
         <div class='bouton'>
-            <a href="index.php"><img src="jepsen_brite.png" alt="logo jepsen-brite"></a>
+            <a href="./index.php?id=<?php echo $_SESSION['id']; ?>"><img src="./src/img/jepsen_brite.png" alt="logo jepsen-brite"></a>
             <button class="buttonsearch"><i class="fas fa-search"></i></button>
-            <a href="logout.php" class='buttonsignup'>Log out</a>
+            <a href="./logout.php" class='buttonsignup'>Log out</a>
         </div>
     </header>
 </body>

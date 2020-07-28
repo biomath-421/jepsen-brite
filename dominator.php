@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <html>
     <head>
         <title>homepage</title>
@@ -28,7 +27,7 @@
 </section >
 </div>
 </main>
-<?php include("footer.inc.php");?>
+<?php include("layout/footer.inc.php");?>
 <script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous"></script>
 </body>
 </html>
