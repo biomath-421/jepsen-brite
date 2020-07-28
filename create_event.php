@@ -41,7 +41,7 @@
 </table>
 <input type=submit class="title_input"></input>
 </main>
-<?php include("footer.inc.php");?>
+<?php include("layout/footer.inc.php");?>
 
 <script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous"></script>
 </body>
