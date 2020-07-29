@@ -13,8 +13,4 @@
 
     $app_title = "brite";
 
-    $css_file = "contenu/css/style.css";
-    $separator = "|";
-    $newline = "\n";
-
 ?>
