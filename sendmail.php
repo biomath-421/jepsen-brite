@@ -1,13 +1,13 @@
 <?php
 if(isset($_POST['mail'])){
-    $header="MIME-Version: 1.0\r\n";
-    $header.='From:"Jespens-brite.com"<support@jepsens.com>'."\n";
-    $header.='Content-Type:text/html; charset="uft-8"'."\n";
-    $header.='Content-Transfer-Encoding: 8bit';
-                                
-    $message='Salut ça va?';
-                                
-    mail("rasamizafybryan98@gmail.com", "Salut tout le monde !", $message, $header);
+    $to      = 'rasamizafybryan98@example.com';
+    $subject = 'Inscription jepsens-brite';
+    $message = 'Félicitation!! Vous êtes faite désormais partie de la grande famille des jepsens-brite!';
+    $headers = 'From: jepsensbrite@support.com' . "\r\n" .
+    'Reply-To: jepsensbrite@support.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+    mail($to, $subject, $message, $headers);
 }
 
  ?>
