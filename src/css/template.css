@@ -76,15 +76,37 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 99999;
     opacity:0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
+
+}
+.editmodalDialog {
+    position: fixed;
+    font-family: "Mulish",Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow-y: scroll;
+
 }
 .modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.editmodalDialog:target {
     opacity:1;
     pointer-events: auto;
 }
@@ -95,4 +117,26 @@
     margin: 10% auto;
     padding: 30px;
     background-color: rgb(204, 204, 204);
+    border-bottom: 1.5px solid;
+    border-color: rgb(107, 107, 107);
+}
+.editmodalDialog > div {
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 30px;
+    background-color: rgb(204, 204, 204);
+    border-bottom: 1.5px solid;
+    border-color: rgb(107, 107, 107);
+}
+.editmodalDialog > div {
+    width: 80%;
+    max-width: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 30px;
+    background-color: rgb(204, 204, 204);
+    border-bottom: 1.5px solid;
+    border-color: rgb(107, 107, 107);
 }
