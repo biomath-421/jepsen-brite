@@ -15,7 +15,6 @@ if(!isset($_SESSION)){
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<body>
 <?php
 if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
     include("layout/header.php");
@@ -43,7 +42,7 @@ if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
             ?>
         </div>
         <div id="slider">
-            <?php include("slider.php"); ?>
+            <?php include("Vue/slider.php"); ?>
         </div>
         <section class="article">
 
@@ -57,12 +56,12 @@ if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
             . ' titre as titre, auteur as auteur'
             . ' image as image, description as description, categorie as categorie'
             . ' from evenement where date > now() limit 10');
-            foreach ($events as $event):
+            foreach ($events as $event){
             echo
             '<section class="article">
             <header>
             <h2>'. $event['titre'] .'</h2>
-            <p>' $event['auteur'] .'</p>
+            <p>'.$event['auteur'] .'</p>
             <time>'. $event['date'] .'</time>
             </header>
             <img  alt="image event" class="imgevent" '. $event['image'] .'> 
@@ -70,7 +69,9 @@ if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
             <p>' . $event['categorie'] . '</p>
             </section>
             <hr />';
-            endforeach;
+            };
+            ?>
+        <section>
             <img src="src/img/téléchargement.jpg" alt="image event" class="imgevent">
             <h2 class="titre-h2">Bassleader reactivated world <div class="category">concert</div></h2>
             <h5 class="date"><?php echo date('H:i, D d/m/Y')?></h5>
