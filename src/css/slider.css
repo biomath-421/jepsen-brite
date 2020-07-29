@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 400px;
+    height: 450px;
     margin-bottom: 20px;
     font-family: "Mulish-bold",Arial, Helvetica, sans-serif;
 }
@@ -33,6 +33,8 @@ margin: 0;
 padding:0;
 color: rgb(255, 255, 255);
 font-size: 45px;
+line-height: 55px;
+text-align: center;
 }
 @font-face{
     font-family: "Mulish-bold";
