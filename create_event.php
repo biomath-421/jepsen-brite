@@ -1,5 +1,10 @@
 <?php
+if(!isset($_SESSION)){
     session_start();
+}
+
+
+
 ?>
 
 <html>
@@ -10,9 +15,9 @@
 <body>
 <?php 
     if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
-        include("header.php");
+        include("layout/header.php");
     }else{
-        include("header.inc.php");
+        include("layout/header.inc.php");
     }
 ?>
 
@@ -20,6 +25,7 @@
 <h2 class="Titre-h2 h2center">Nouvel événement</h2>
 <input type="text" class="title_input"placeholder="Titre"></input>
 <input type="text" class="descr_input"placeholder="insérez votre description ici"></input>
+<input type="file" class="title_input"></input>
 <table class="check_cat">
     <tr>
         <th>
@@ -40,7 +46,7 @@
 </table>
 <input type=submit class="title_input"></input>
 </main>
-<?php include("footer.inc.php");?>
+<?php include("layout/footer.inc.php");?>
 
 <script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous"></script>
 </body>

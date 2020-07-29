@@ -1,10 +1,22 @@
+<?php
+if(!isset($_SESSION)){
+    session_start();
+}
+?>
+
 <html>
 <head>
 <title>homepage</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-<?php include("header.inc.php");?>
+    <?php 
+        if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
+            include("layout/header.php");
+        }else{
+            include("layout/header.inc.php");
+        }
+    ?>
 <main>
     <p class="about">Jepsen-Brite is a displaying event website, where each person has an equality in action. all people can create or browse event.</p>
 </main>

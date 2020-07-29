@@ -1,5 +1,7 @@
 <?php
+if(!isset($_SESSION)){
     session_start();
+}
 ?>
 
 <html>
@@ -10,9 +12,9 @@
 <body>
 <?php 
     if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
-        include("header.php");
+        include("layout/header.php");
     }else{
-        include("header.inc.php");
+        include("layout/header.inc.php");
     }
 ?>
 <main class="grid">
@@ -108,7 +110,7 @@
 </section >
 </div>
 </main>
-<?php include("footer.inc.php");?>
+<?php include("layout/footer.inc.php");?>
 
 <script src="https://kit.fontawesome.com/1815b8a69b.js" crossorigin="anonymous"></script>
 </body>

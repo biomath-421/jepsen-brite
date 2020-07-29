@@ -1,6 +1,7 @@
 <?php
+if(!isset($_SESSION)){
     session_start();
-    
+}    
     include 'config/config.php';
 
     try {
@@ -23,9 +24,17 @@
 
     <link rel="stylesheet" href="src/css/style.css">
 
+    <script type="text/javascript">
+        function ConfirmDelete()
+        {
+            if (confirm("Delete Account?")){
+                location.href="<?php echo "delete_profile.php?id=".$_SESSION['id']; ?>";
+            }     
+        }
+    </script>
 </head>
 <body>
-    <?php include("header.php");?>
+    <?php include("layout/header.php");?>
         <main>
             <div class="feedback">
                 <?php date_default_timezone_set('Europe/Paris'); ?>
@@ -51,13 +60,13 @@
                             if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']){
                         ?>
                             <a href="edit_profile.php?id=<?php echo $_SESSION['id']; ?>"><i class="fas fa-pen buttonsection"></i></a>
-                            <a href="delete_profile.php"> <i class="fas fa-trash buttonsection"></i></a>
+                            <button class='deletebutton' onclick="ConfirmDelete()"><i class="fas fa-trash buttonsection"></i></button>
                         <?php
                             }
                         ?> 
                     </div>
-                        <img src="user/avatar/<?php echo $userinfo['avatar']; ?>" alt="image user" class="imguser">
-                        <h2 class="Titre-h2"><?php echo $userinfo['pseudo']; ?></h2>
+                        <img src="user/avatar/<?php echo $userinfo['avatar']; ?>" alt="image user" class="imguser" width='150'>
+                        <h2 class="titre-h2"><?php echo $userinfo['pseudo']; ?></h2>
                         <h5 class="email"><?php echo $userinfo['mail']; ?></h5>
                 </section>
             </div>
