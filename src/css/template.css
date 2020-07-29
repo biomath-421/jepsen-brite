@@ -56,6 +56,13 @@
     font-size: 15px;
     text-align: justify;
 }
+.commentaire{
+    font-family: "Mulish",Arial, Helvetica, sans-serif;
+    color: rgb(46, 46, 46);
+    max-width: 450px;
+    line-height: 18px;
+    font-size: 13px;
+}
 .author{
     color: rgb(128, 128, 128);
     font-family: "Mulish",Arial, Helvetica, sans-serif;
@@ -83,6 +90,7 @@
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
+    overflow-y: scroll;
 
 }
 .editmodalDialog {
@@ -139,4 +147,8 @@
     background-color: rgb(204, 204, 204);
     border-bottom: 1.5px solid;
     border-color: rgb(107, 107, 107);
+}
+textarea{
+    width: 450px;
+    height: 150px;
 }
