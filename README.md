@@ -31,7 +31,7 @@
 ### Said
   #### Back end 
 - [x] évenement, 
-- [ ] ancien evenement, 
+- [x] ancien evenement, 
 - [x] affichage d'un événement, 
 - [x] création d'un événement, 
 - [ ] modification d'un événement, 
