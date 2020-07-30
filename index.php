@@ -45,8 +45,18 @@ if(!isset($_SESSION)){
             <div id="slider">
                 <?php include("slider.php"); ?>
             </div>
-        <section class="article">
-
+            <?php
+                        $bdd = new PDO('mysql:host=localhost;dbname=jepsen-brite;charset=utf8',
+                        'root', '');
+$events = $bdd->query('select id as id, date as date,'
+. ' titre as titre, auteur as auteur'
+. ' image as image, description as description, categorie as categorie'
+. ' from evenement where date > now() limit 10');
+            foreach ($events as $event){
+                include("template.php");
+            };
+            ?>
+                            <section class="article">
         <i class="fab fa-readme buttonsection"></i>
         <i class="fas fa-pen buttonsection"></i>
         <i class="fas fa-trash buttonsection"></i>

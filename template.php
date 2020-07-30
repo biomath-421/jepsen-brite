@@ -37,6 +37,7 @@
                 <input type="file" class="title_input"></input>
             <h2 class="Titre-h2">Modifier la catégorie</h2>
                 <input type="text" class="title_input"placeholder="catégorie"></input>
+                
                 <input type=submit class="title_input"></input>
     </div>
 </div>

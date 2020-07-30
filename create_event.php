@@ -17,12 +17,16 @@ if(!isset($_SESSION)){
         include("layout/header.inc.php");
     }
 ?>
-
 <main>
+    <form style="margin-top:0;">
 <h2 class="Titre-h2 h2center">Nouvel événement</h2>
-<input type="text" class="title_input"placeholder="Titre"></input>
-<input type="text" class="descr_input"placeholder="insérez votre description ici"></input>
-<input type="file" class="title_input"></input>
+<input type="text" id='auteur' class="title_input"placeholder="auteur"></input>
+<input type="text" id="titre"class="title_input"placeholder="Titre"></input>
+<input type="date" id='date' class="title_input"></input>
+<input type="time" id='time' class="title_input"></input>
+<input type="text" id="description" class="descr_input"placeholder="insérez votre description ici"></input>
+<input type="file" id="image"class="title_input"></input>
+<input type="number" id="id_user" class="title_input"></input>
 <table class="check_cat">
     <tr>
         <th>
@@ -41,7 +45,8 @@ if(!isset($_SESSION)){
 </td>
 </tr>
 </table>
-<input type=submit class="title_input"></input>
+<input type=submit class="title_input"method="post" action="event.php"></input>
+</form>
 </main>
 <?php include("layout/footer.inc.php");?>
 
