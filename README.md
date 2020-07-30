@@ -32,8 +32,8 @@
   #### Back end 
 - [x] évenement, 
 - [ ] ancien evenement, 
-- [ ] affichage d'un événement, 
-- [ ] création d'un événement, 
+- [x] affichage d'un événement, 
+- [x] création d'un événement, 
 - [ ] modification d'un événement, 
 - [ ] suppression d'un événement,
 - [ ] comentaire des événements.
