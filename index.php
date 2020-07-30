@@ -46,7 +46,7 @@ if(!isset($_SESSION)){
                 <?php include("slider.php"); ?>
             </div>
             <?php
-                        $bdd = new PDO('mysql:host=localhost;dbname=jepsen-brite;charset=utf8',
+                        $bdd = new PDO('mysql:host=localhost;dbname=jepsens-brite;charset=utf8',
                         'root', '');
 $events = $bdd->query('select id as id, date as date,'
 . ' titre as titre, auteur as auteur'
