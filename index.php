@@ -48,7 +48,7 @@ if(!isset($_SESSION)){
             ?>
         </div>
         <div id="slider">
-            <?php include("Vue/slider.php"); ?>
+            <?php include("slider.php"); ?>
         </div>
         <section class="article">
 
@@ -56,26 +56,26 @@ if(!isset($_SESSION)){
             <i class="fas fa-pen buttonsection"></i>
             <i class="fas fa-trash buttonsection"></i>
             <?php
-            $bdd = new PDO('mysql:host=localhost;dbname=jepsens-brite;charset=utf8',
-                                    'root', '');
+            $bdd = new PDO($dbdsn, $dbusername, $dbpassword,);
+
             $events = $bdd->query('select id as id, date as date,'
             . ' titre as titre, auteur as auteur'
             . ' image as image, description as description, categorie as categorie'
             . ' from evenement where date > now() limit 10');
-            foreach ($events as $event){
-            echo
-            '<section class="article">
-            <header>
-            <h2>'. $event['titre'] .'</h2>
-            <p>'.$event['auteur'] .'</p>
-            <time>'. $event['date'] .'</time>
-            </header>
-            <img  alt="image event" class="imgevent" '. $event['image'] .'> 
-            <p>' . $event['description'] . '</p>
-            <p>' . $event['categorie'] . '</p>
-            </section>
-            <hr />';
-            };
+            while($event = $events->fetch()){
+                echo
+                '<section class="article">
+                <header>
+                <h2>'. $event['titre'] .'</h2>
+                <p>'.$event['auteur'] .'</p>
+                <time>'. $event['date'] .'</time>
+                </header>
+                <img  alt="image event" class="imgevent" '. $event['image'] .'> 
+                <p>' . $event['description'] . '</p>
+                <p>' . $event['categorie'] . '</p>
+                </section>
+                <hr />';
+            }
             ?>
         <section>
             <img src="src/img/téléchargement.jpg" alt="image event" class="imgevent">

@@ -74,35 +74,7 @@ if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
             }
             ?>
         </div>
-<?php
-try
-{
-	$bdd = new PDO('mysql:host=localhost;dbname=jepsens-brite;charset=utf8', '$dbusername', '$dbpassword');
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
-$req = $bdd->prepare('INSERT INTO evenement(titre, auteur, date, time, image, description, categorie, id_user) VALUES(:titre, auteur, :date, :time, :image, :description, :categorie, :id_user)');
-$req->execute(array(
-	'titre' => $titre,
-	'auteur' => $auteur,
-	'date' => $date,
-	'time' => $time,
-	'image' => $image,
-	'description' => $description,
-    'categorie' => $categorie,
-    'id_user' => $id_user
-	));
-echo $titre;
-echo $auteur;
-echo $date;
-echo $time;
-echo $image;
-echo $description;
-echo $categorie;
-echo $id_user;
-?>
+
                  <section class="article">
 
             <i class="fab fa-readme"></i>
