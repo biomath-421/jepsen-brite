@@ -50,7 +50,7 @@ if(isset($_GET['id']) AND $_GET['id'] == $_SESSION['id']){
             <i class="fas fa-pen buttonsection"></i>
             <i class="fas fa-trash buttonsection"></i>
             <?php
-            $bdd = new PDO('mysql:host=localhost;dbname=jepsen-brite;charset=utf8',
+            $bdd = new PDO('mysql:host=localhost;dbname=jepsens-brite;charset=utf8',
                                     'root', '');
             $events = $bdd->query('select id as id, date as date,'
             . ' titre as titre, auteur as auteur'
