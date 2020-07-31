@@ -17,7 +17,11 @@
     border: 0px solid;
 }
 .imgevent{
+<<<<<<< HEAD
     width:200px; 
+=======
+    width:200px;
+>>>>>>> said
     height: auto;
     float: right;
     margin:10px;
@@ -27,7 +31,11 @@
 .titre-h2{
     color: rgb(49, 49, 49);
     font-family: "Mulish-bold",Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
     font-size: 20px; 
+=======
+    font-size: 20px;
+>>>>>>> said
     max-width: 450px;
     line-height: 20px;
 }
@@ -44,9 +52,15 @@
     margin-left: 10px;
 }
 .date{
+<<<<<<< HEAD
     font-family: "Mulish",Arial, Helvetica, sans-serif; 
     color: rgb(71, 71, 71)
     
+=======
+    font-family: "Mulish",Arial, Helvetica, sans-serif;
+    color: rgb(71, 71, 71)
+
+>>>>>>> said
 }
 .description{
     font-family: "Mulish",Arial, Helvetica, sans-serif;

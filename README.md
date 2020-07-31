@@ -1,3 +1,4 @@
+
 # Jepsen-brite
 
 ## Organisation du travail: 
@@ -158,7 +159,5 @@ The category page displays events in regards to category. It can looks like the 
 * The project should be published on [**Heroku**](https://heroku.com). You have free credits to use on Heroku with your **GitHub Student Pack**.
 * You must hash your password with a solution like *bcrypt*. 
 * No credential must be commited on the repo Github. 
-
-
 
 

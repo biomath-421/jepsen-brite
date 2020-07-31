@@ -1,4 +1,5 @@
 <?php
+include(config/config.php);
 if(!isset($_SESSION)){
     session_start();
 }
@@ -7,7 +8,7 @@ if(!isset($_SESSION)){
 <html>
 <head>
 <title>create event</title>
-<link rel="stylesheet" href="src/css/style.css">
+<link rel="styilesheet" href="src/css/style.css">
 </head>
 <body>
 <?php 
@@ -19,21 +20,26 @@ if(!isset($_SESSION)){
 ?>
 
 <main>
+<input method="post" action="event.php">
 <h2 class="Titre-h2 h2center">Nouvel événement</h2>
-<input type="text" class="title_input"placeholder="Titre"></input>
-<input type="text" class="descr_input"placeholder="insérez votre description ici"></input>
-<input type="file" class="title_input"></input>
+<input type="text" id='auteur' class="title_input"placeholder="auteur"></input>
+<input type="text" id='titre' class="title_input"placeholder="Titre"></input>
+<input type="date" id='date' class="title_input"></input>
+<input type="time" id='time' class="title_input"></input>
+<input type="text" id="description" class='descr_input' placeholder='insérez votre description ici'></input>
+<input type="file" id='image' class="title_input"></input>
+<input type="number" id="id_user" class="title_input"></input>
 <table class="check_cat">
-    <tr>
-        <th>
-            quelle(s) catégorie(s)?
-        </th>
-    </tr>
-    <tr>
-        <td>
-    <div><input type="checkbox" id="concert" name="concert"><label for="concert">concert</label></div>
-    </td>
-    <td>
+	<tr>
+		<th>
+			quelle(s) catégorie(s)?
+		</th>
+	</tr>
+	<tr>
+		<td>
+	<div><input type="checkbox" id="concert" name="concert"><label for="concert">concert</label></div>
+	</td>
+	<td>
 <div><input type="checkbox" id="culture" name="culture"><label for="culture">culture</label></div>
 </td>
 <td>
@@ -42,6 +48,7 @@ if(!isset($_SESSION)){
 </tr>
 </table>
 <input type=submit class="title_input"></input>
+</form>
 </main>
 <?php include("layout/footer.inc.php");?>
 
